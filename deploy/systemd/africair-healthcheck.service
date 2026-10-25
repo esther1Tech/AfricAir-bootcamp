@@ -1,0 +1,8 @@
+[Unit]
+Description=AfricAir health check
+After=nginx.service
+
+[Service]
+Type=oneshot
+StateDirectory=africair
+ExecStart=/usr/local/bin/africair-healthcheck.sh
